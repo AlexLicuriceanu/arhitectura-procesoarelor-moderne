@@ -1,0 +1,16 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/ID.v,1701955551,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/IF.v,,ID,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/IF.v,1701955475,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/IF_ID_PIPE.v,,IF,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/IF_ID_PIPE.v,1701955542,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/PC.v,,IF_ID_PIPE,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/PC.v,1701955515,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/RISC_V_ID_ID.v,,PC,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/RISC_V_ID_ID.v,1701955477,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/adder.v,,RISC_V_IF_ID,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/adder.v,1701955523,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/imm_gen.v,,adder,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/imm_gen.v,1701955570,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/instruction_memory.v,,imm_gen,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/instruction_memory.v,1701955530,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/mux2_1.v,,instruction_memory,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/mux2_1.v,1701955506,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/registers.v,,mux2_1,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/etapa1/etapa1.srcs/sources_1/new/registers.v,1701955563,verilog,,C:/Users/Alex/Desktop/riscv-etapa1/test_riscv_stud.v,,registers,,,,,,,,
+C:/Users/Alex/Desktop/riscv-etapa1/test_riscv_stud.v,1698756984,verilog,,,,RISC_V_TB,,,,,,,,
