@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vitis HLS Report for 'carry_lookahead_adder'
+================================================================
+* Date:           Sat Jan  6 01:27:44 2024
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        adder
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.260 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       18|       18|  0.180 us|  0.180 us|   19|   19|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_15_1  |       16|       16|         2|          1|          1|    16|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.47>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 5 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 0"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [adder/carry_lookahead_adder.cpp:3]   --->   Operation 7 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln3 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0" [adder/carry_lookahead_adder.cpp:3]   --->   Operation 8 'specinterface' 'specinterface_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %a"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %b"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %sum, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %sum"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.61ns)   --->   "%store_ln15 = store i5 0, i5 %i" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 15 'store' 'store_ln15' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 16 [1/1] (1.61ns)   --->   "%br_ln15 = br void %for.inc" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 16 'br' 'br_ln15' <Predicate = true> <Delay = 1.61>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%carry = phi i1 %carry_1, void %for.inc.split, i1 0, void %entry"   --->   Operation 17 'phi' 'carry' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%i_1 = load i5 %i" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 18 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 19 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.44ns)   --->   "%icmp_ln15 = icmp_eq  i5 %i_1, i5 16" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 20 'icmp' 'icmp_ln15' <Predicate = true> <Delay = 1.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 21 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.86ns)   --->   "%add_ln15 = add i5 %i_1, i5 1" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 22 'add' 'add_ln15' <Predicate = true> <Delay = 1.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln15 = br i1 %icmp_ln15, void %for.inc.split, void %for.end" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 23 'br' 'br_ln15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%i_cast = zext i5 %i_1" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 24 'zext' 'i_cast' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i1 %a, i64 0, i64 %i_cast" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 25 'getelementptr' 'a_addr' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_1 : Operation 26 [2/2] (2.15ns)   --->   "%a_load = load i4 %a_addr" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 26 'load' 'a_load' <Predicate = (!icmp_ln15)> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%b_addr = getelementptr i1 %b, i64 0, i64 %i_cast" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 27 'getelementptr' 'b_addr' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_1 : Operation 28 [2/2] (2.15ns)   --->   "%b_load = load i4 %b_addr" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 28 'load' 'b_load' <Predicate = (!icmp_ln15)> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_1 : Operation 29 [1/1] (1.61ns)   --->   "%store_ln15 = store i5 %add_ln15, i5 %i" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 29 'store' 'store_ln15' <Predicate = (!icmp_ln15)> <Delay = 1.61>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%ret_ln24 = ret i1 %carry" [adder/carry_lookahead_adder.cpp:24]   --->   Operation 41 'ret' 'ret_ln24' <Predicate = (icmp_ln15)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 6.26>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [adder/carry_lookahead_adder.cpp:13]   --->   Operation 30 'specloopname' 'specloopname_ln13' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_2 : Operation 31 [1/2] (2.15ns)   --->   "%a_load = load i4 %a_addr" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 31 'load' 'a_load' <Predicate = (!icmp_ln15)> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_2 : Operation 32 [1/2] (2.15ns)   --->   "%b_load = load i4 %b_addr" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 32 'load' 'b_load' <Predicate = (!icmp_ln15)> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_2 : Operation 33 [1/1] (0.97ns)   --->   "%p = xor i1 %a_load, i1 %b_load" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 33 'xor' 'p' <Predicate = (!icmp_ln15)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (0.97ns)   --->   "%s = xor i1 %p, i1 %carry" [adder/carry_lookahead_adder.cpp:16]   --->   Operation 34 'xor' 's' <Predicate = (!icmp_ln15)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node carry_1)   --->   "%g = and i1 %a_load, i1 %b_load" [adder/carry_lookahead_adder.cpp:17]   --->   Operation 35 'and' 'g' <Predicate = (!icmp_ln15)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node carry_1)   --->   "%and_ln19 = and i1 %p, i1 %carry" [adder/carry_lookahead_adder.cpp:19]   --->   Operation 36 'and' 'and_ln19' <Predicate = (!icmp_ln15)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.97ns) (out node of the LUT)   --->   "%carry_1 = or i1 %g, i1 %and_ln19" [adder/carry_lookahead_adder.cpp:19]   --->   Operation 37 'or' 'carry_1' <Predicate = (!icmp_ln15)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%sum_addr = getelementptr i1 %sum, i64 0, i64 %i_cast" [adder/carry_lookahead_adder.cpp:21]   --->   Operation 38 'getelementptr' 'sum_addr' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (2.15ns)   --->   "%store_ln21 = store i1 %s, i4 %sum_addr" [adder/carry_lookahead_adder.cpp:21]   --->   Operation 39 'store' 'store_ln21' <Predicate = (!icmp_ln15)> <Delay = 2.15> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln15 = br void %for.inc" [adder/carry_lookahead_adder.cpp:15]   --->   Operation 40 'br' 'br_ln15' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.47ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'load' operation ('i', adder/carry_lookahead_adder.cpp:15) on local variable 'i' [18]  (0 ns)
+	'add' operation ('add_ln15', adder/carry_lookahead_adder.cpp:15) [22]  (1.86 ns)
+	'store' operation ('store_ln15', adder/carry_lookahead_adder.cpp:15) of variable 'add_ln15', adder/carry_lookahead_adder.cpp:15 on local variable 'i' [38]  (1.61 ns)
+
+ <State 2>: 6.26ns
+The critical path consists of the following:
+	'load' operation ('a_load', adder/carry_lookahead_adder.cpp:16) on array 'a' [28]  (2.15 ns)
+	'xor' operation ('p', adder/carry_lookahead_adder.cpp:16) [31]  (0.978 ns)
+	'xor' operation ('s', adder/carry_lookahead_adder.cpp:16) [32]  (0.978 ns)
+	'store' operation ('store_ln21', adder/carry_lookahead_adder.cpp:21) of variable 's', adder/carry_lookahead_adder.cpp:16 on array 'sum' [37]  (2.15 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

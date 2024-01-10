@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../carry_lookahead_adder-tb.cpp in debug mode
+   Compiling ../../../carry_lookahead_adder.cpp in debug mode
+   Generating csim.exe
+0000111110100000 (4000) + 0010111011100000 (12000) = 0011111010000000 (16000) carry = 0
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

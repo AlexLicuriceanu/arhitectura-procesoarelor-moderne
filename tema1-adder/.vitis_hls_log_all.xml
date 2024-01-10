@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 207-5555] Unsupported interface port data type in '#pragma HLS interface ap_none' (adder/carry_lookahead_adder.cpp:8:41)" projectName="adder" solutionName="solution1" date="2024-01-06T01:27:38.213+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5555] Unsupported interface port data type in '#pragma HLS interface ap_none' (adder/carry_lookahead_adder.cpp:7:41)" projectName="adder" solutionName="solution1" date="2024-01-06T01:27:33.627+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5555] Unsupported interface port data type in '#pragma HLS interface ap_none' (adder/carry_lookahead_adder.cpp:6:41)" projectName="adder" solutionName="solution1" date="2024-01-06T01:27:33.624+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

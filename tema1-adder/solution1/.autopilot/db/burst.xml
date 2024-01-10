@@ -1,0 +1,6 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="NonByteSizeMemoryAccessMissed" src_info="adder/carry_lookahead_adder.cpp:16:17" msg_id="214-226" msg_severity="INFO" msg_body="Non byte size access is unsupported" resolution="214-226" ID="for.inc.load.5" VarName="a" ParentFunc="carry_lookahead_adder(bool*, bool*, bool*)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="NonByteSizeMemoryAccessMissed" src_info="adder/carry_lookahead_adder.cpp:16:24" msg_id="214-226" msg_severity="INFO" msg_body="Non byte size access is unsupported" resolution="214-226" ID="for.inc.load.8" VarName="b" ParentFunc="carry_lookahead_adder(bool*, bool*, bool*)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="NonByteSizeMemoryAccessMissed" src_info="adder/carry_lookahead_adder.cpp:21:16" msg_id="214-226" msg_severity="INFO" msg_body="Non byte size access is unsupported" resolution="214-226" ID="for.inc.store.22" VarName="sum" ParentFunc="carry_lookahead_adder(bool*, bool*, bool*)"/>
+</VitisHLS:BurstInfo>
+

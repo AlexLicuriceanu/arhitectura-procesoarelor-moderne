@@ -1,0 +1,3 @@
+<pragmas>
+<pragma file="adder/carry_lookahead_adder.cpp" line="5" pragmaType="interface" parentfunction="carry_lookahead_adder" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>

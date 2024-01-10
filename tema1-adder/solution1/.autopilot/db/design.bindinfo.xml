@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln15_fu_110_p2" SOURCE="adder/carry_lookahead_adder.cpp:15" VARIABLE="icmp_ln15" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_116_p2" SOURCE="adder/carry_lookahead_adder.cpp:15" VARIABLE="add_ln15" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="p_fu_133_p2" SOURCE="adder/carry_lookahead_adder.cpp:16" VARIABLE="p" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op xor" ID="" IMPL="auto" LATENCY="0" OPTYPE="xor" PRAGMA="" RTLNAME="sum_d0" SOURCE="adder/carry_lookahead_adder.cpp:16" VARIABLE="s" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="g_fu_146_p2" SOURCE="adder/carry_lookahead_adder.cpp:17" VARIABLE="g" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln19_fu_152_p2" SOURCE="adder/carry_lookahead_adder.cpp:19" VARIABLE="and_ln19" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="carry_1_fu_158_p2" SOURCE="adder/carry_lookahead_adder.cpp:19" VARIABLE="carry_1" MODULE="carry_lookahead_adder" LOOP="VITIS_LOOP_15_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>
