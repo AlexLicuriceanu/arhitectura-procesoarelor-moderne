@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"carry_lookahead_adder": {
-			"proto_instances": {
-			}
-		}
-	}
-}

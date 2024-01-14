@@ -1,0 +1,11 @@
+/*
+ * Alexandru LICURICEANU
+ * 332CD
+ */
+
+
+#ifndef CARRY_LOOKAHEAD_ADDER_TB_H
+#define CARRY_LOOKAHEAD_ADDER_TB_H
+
+
+#endif // CARRY_LOOKAHEAD_ADDER_TB_H
