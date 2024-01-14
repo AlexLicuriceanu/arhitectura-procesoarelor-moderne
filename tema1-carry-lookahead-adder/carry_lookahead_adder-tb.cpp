@@ -118,5 +118,5 @@ int main () {
 		cout << "Tests failed." << endl;
 	}
 
-	return 0;
+	return status;
 }
