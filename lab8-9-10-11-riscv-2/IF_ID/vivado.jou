@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Jan 17 00:42:29 2024
+# Process ID: 21688
+# Current directory: C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/IF_ID
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10620 C:\Users\Alex\Documents\GitHub\arhitectura-procesoarelor-moderne\lab8-9-10-11-riscv-2\IF_ID\IF_ID.xpr
+# Log file: C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/IF_ID/vivado.log
+# Journal file: C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/IF_ID\vivado.jou
+# Running On: DESKTOP-OUSQJPO, OS: Windows, CPU Frequency: 4008 MHz, CPU Physical cores: 4, Host memory: 34295 MB
+#-----------------------------------------------------------
+start_gui
+open_project -read_only C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/IF_ID/IF_ID.xpr
+update_compile_order -fileset sources_1
+save_project_as RISC_V_EX_MEM_WB C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/RISC_V_EX_MEM_WB -force
+import_files
+launch_simulation
+open_wave_config C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/RISC_V_EX_MEM_WB/RISC_V_EX_MEM_WB.srcs/sim_1/imports/IF_ID/RISC_V_TB_behav.wcfg
+source RISC_V_TB.tcl
+current_wave_config {RISC_V_TB_behav.wcfg}
+add_wave {{/RISC_V_TB/procesor/data_memory_inst/dataMemory}} 
+save_wave_config {C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/RISC_V_EX_MEM_WB/RISC_V_EX_MEM_WB.srcs/sim_1/imports/IF_ID/RISC_V_TB_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-2/RISC_V_EX_MEM_WB/RISC_V_EX_MEM_WB.srcs/sim_1/imports/IF_ID/RISC_V_TB_behav.wcfg
+source RISC_V_TB.tcl
+close_sim

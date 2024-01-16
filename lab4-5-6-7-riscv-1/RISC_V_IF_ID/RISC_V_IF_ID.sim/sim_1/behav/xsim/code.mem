@@ -1,0 +1,7 @@
+00008133  //add x2,x1,x0  -> x2=0x1
+00108093  //addi x1,x1,1  -> x1=0x2
+0020F1B3  //and x3,x1,x2  -> x3=0x0
+0010E213  //ori x4,x1,1   -> x4=0x3
+0042A223  //sw x4,4(x5)   -> D$[2] = 0x3
+00802603  //lw x12,8(x0)  -> x12 = 0x3
+04090E63  //beq	x18,x0,5c -> PC_Branch = 0x74 (saltul nu este facut)
