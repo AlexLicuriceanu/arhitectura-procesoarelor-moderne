@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Jan 17 01:03:15 2024
+# Process ID: 16788
+# Current directory: C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-ex-mem-wb/RISC_V_EX_MEM_WB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9100 C:\Users\Alex\Documents\GitHub\arhitectura-procesoarelor-moderne\lab8-9-10-11-riscv-ex-mem-wb\RISC_V_EX_MEM_WB\RISC_V_EX_MEM_WB.xpr
+# Log file: C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-ex-mem-wb/RISC_V_EX_MEM_WB/vivado.log
+# Journal file: C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-ex-mem-wb/RISC_V_EX_MEM_WB\vivado.jou
+# Running On: DESKTOP-OUSQJPO, OS: Windows, CPU Frequency: 4008 MHz, CPU Physical cores: 4, Host memory: 34295 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alex/Documents/GitHub/arhitectura-procesoarelor-moderne/lab8-9-10-11-riscv-ex-mem-wb/RISC_V_EX_MEM_WB/RISC_V_EX_MEM_WB.xpr
